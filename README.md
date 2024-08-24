@@ -4,7 +4,8 @@
 
 # AI 연기 감지 모델을 활용한 스마트 화재 예측 시스템
 
-![Uploading 스크린샷 2024-08-24 오후 2.13.28.png…]()
+![DALL·E 2024-08-21 22 50 05 - A high-tech smoke detection system integrated with AI, depicted in a futuristic environment  The image shows a modern smoke detector with digital inte](https://github.com/user-attachments/assets/3bcdc03b-2c3c-4764-8673-d39638423257)
+
 
 
 ## 프로젝트 개요
