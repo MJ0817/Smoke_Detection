@@ -21,6 +21,8 @@
 
 ## 사용된 기술
 - **프로그래밍 언어**: Python
+- ![스크린샷 2024-08-27 181529](https://github.com/user-attachments/assets/4cb879c4-8026-4b2f-baf3-5aa4f2b905a2)
+
 - **라이브러리 및 프레임워크**: NumPy, pandas, matplotlib, seaborn, scikit-learn, TensorFlow, XGBoost
 - **모델링**: 
   - **로지스틱 회귀(Logistic Regression)**: 이진 분류 문제에 효과적이며, 해석이 쉬운 모델입니다.
@@ -33,6 +35,7 @@
   - **인공신경망(Neural Network)**: 복잡한 패턴 인식에 강력한 모델로, 이 프로젝트에서 가장 높은 성능을 기록했습니다.
 
 ## 모델 성능 평가
+
 - **성능 지표**: 모델의 성능은 정확도(Accuracy), 정밀도(Precision), 재현율(Recall), F1-Score 등의 다양한 지표를 사용하여 평가되었습니다.
 - **주요 결과**: 인공신경망(Neural Network) 모델이 가장 높은 성능을 보였으며, 정확도 95% 이상을 기록했습니다.
 - **모델 성능 비교**: 각 모델의 혼동 행렬(Confusion Matrix)과 성능 비교 그래프를 통해 모델의 예측 능력을 시각적으로 확인할 수 있습니다.
