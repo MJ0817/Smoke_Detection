@@ -33,6 +33,8 @@
 - **성능 지표**: 모델의 성능은 정확도(Accuracy), 정밀도(Precision), 재현율(Recall), F1-Score 등의 다양한 지표를 사용하여 평가되었습니다.
 - **주요 결과**: 인공신경망(Neural Network) 모델이 가장 높은 성능을 보였으며, 정확도 95% 이상을 기록했습니다.
 - **모델 성능 비교**: 각 모델의 혼동 행렬(Confusion Matrix)과 성능 비교 그래프를 통해 모델의 예측 능력을 시각적으로 확인할 수 있습니다.
+![Figure_1](https://github.com/user-attachments/assets/6fde022c-dc2a-40ea-9048-2a1ccc65de01)
+
 
 ## 사용법
 1. **데이터 준비**: IoT 장치로부터 수집된 데이터를 준비합니다.
