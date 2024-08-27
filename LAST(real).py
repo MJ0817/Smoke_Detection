@@ -252,12 +252,12 @@ p.axes.set_yscale("log")
 
 plt.show()
 
-# 원시 수소 분포 시각화
+# 센서가 감지한 수소 분포 시각화
 print(f"Let's have a look on the distribution of raw hydrogen :")
 _, axs = plt.subplot_mosaic([["00", "00"], ["10", "11"]], figsize=(20,12), sharey=True)
 plt.tight_layout(pad=5.0)
 
-# 전체 원시 수소 분포
+# 센서가 감지한 수소 분포
 sns.histplot(data=data, x="Raw H2", hue="Fire Alarm", hue_order=data["Fire Alarm"].value_counts(ascending=True).index,
              multiple="stack", ax=axs["00"], palette=palette[0:3:2], kde=False, bins=45, alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["00"].set_title("\nOverall Raw Hydrogen Existance", fontsize=25)
@@ -265,7 +265,7 @@ axs["00"].set_ylabel("Count", fontsize=20)
 axs["00"].set_xlabel("Raw Hydrogen", fontsize=20)
 axs["00"].set_yscale("log")
 
-# 화재 경보 발생 시 원시 수소 분포
+# 화재 경보 발생 시 수소 분포
 sns.histplot(data=data[data["Fire Alarm"]=="Yes"], x="Raw H2", ax=axs["10"], color=palette[2], kde=False, bins=30,
              alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["10"].set_title("\nFor Triggering Fire Alarm", fontsize=25)
@@ -273,7 +273,7 @@ axs["10"].set_ylabel("Count", fontsize=20)
 axs["10"].set_xlabel("Raw Hydrogen", fontsize=20)
 axs["10"].set_yscale("log")
 
-# 화재 경보가 발생하지 않을 때 원시 수소 분포
+# 화재 경보가 발생하지 않을 때 수소 분포
 sns.histplot(data=data[data["Fire Alarm"]=="No"], x="Raw H2", ax=axs["11"], color=palette[0], kde=False, bins=30,
              alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["11"].set_title("\nFor Not Triggering Fire Alarm", fontsize=25)
@@ -283,7 +283,7 @@ axs["11"].set_yscale("log")
 
 plt.show()
 
-# 화재 경보에 대한 원시 수소 효과 분석
+# 화재 경보에 대한 수소 효과 분석
 print("Let's have a look on the distribution of effectiveness-wise raw hydrogen existance analysis :")
 plt.subplots(figsize=(20, 8))
 
@@ -297,12 +297,12 @@ p.axes.set_yscale("linear")
 
 plt.show()
 
-# 원시 에탄올 분포 시각화
+# 에탄올 분포 시각화
 print(f"Let's have a look on the distribution of raw ethanol :")
 _, axs = plt.subplot_mosaic([["00", "00"], ["10", "11"]], figsize=(20,12), sharey=True)
 plt.tight_layout(pad=5.0)
 
-# 전체 원시 에탄올 분포
+# 전체 에탄올 분포
 sns.histplot(data=data, x="Raw Ethanol", hue="Fire Alarm", hue_order=data["Fire Alarm"].value_counts(ascending=True).index,
              multiple="stack", ax=axs["00"], palette=palette[0:3:2], kde=False, bins=45, alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["00"].set_title("\nOverall Raw Ethanol Existance", fontsize=25)
@@ -310,7 +310,7 @@ axs["00"].set_ylabel("Count", fontsize=20)
 axs["00"].set_xlabel("Raw Ethanol", fontsize=20)
 axs["00"].set_yscale("log")
 
-# 화재 경보 발생 시 원시 에탄올 분포
+# 화재 경보 발생 시 에탄올 분포
 sns.histplot(data=data[data["Fire Alarm"]=="Yes"], x="Raw Ethanol", ax=axs["10"], color=palette[2], kde=False, bins=30,
              alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["10"].set_title("\nFor Triggering Fire Alarm", fontsize=25)
@@ -318,7 +318,7 @@ axs["10"].set_ylabel("Count", fontsize=20)
 axs["10"].set_xlabel("Raw Ethanol", fontsize=20)
 axs["10"].set_yscale("log")
 
-# 화재 경보가 발생하지 않을 때 원시 에탄올 분포
+# 화재 경보가 발생하지 않을 때 에탄올 분포
 sns.histplot(data=data[data["Fire Alarm"]=="No"], x="Raw Ethanol", ax=axs["11"], color=palette[0], kde=False, bins=30,
              alpha=1, fill=True, edgecolor="black", linewidth=2)
 axs["11"].set_title("\nFor Not Triggering Fire Alarm", fontsize=25)
@@ -328,7 +328,7 @@ axs["11"].set_yscale("log")
 
 plt.show()
 
-# 화재 경보에 대한 원시 에탄올 효과 분석
+# 화재 경보에 대한 에탄올 효과 분석
 print("Let's have a look on the distribution of effectiveness-wise raw ethanol existance analysis :")
 plt.subplots(figsize=(20, 8))
 
